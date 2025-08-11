@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Task List</h1>
+        <button id="themeToggle" onclick="changeDarkmood()">
+            <i id="themeIcon" class="fa-solid fa-moon"></i>
+        </button>
+        
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Add new task">
+            <button id="addTaskBtn" onclick="addTask()">Add</button>
+        </div>
+        
+        
+        <div class="stats">
+            <span id="totalTasks" ></span>
+            <span id="completedTasks"></span>
+        </div>
+    </div>
+    <div class="tasksAdd">
+        <ul id="taskList">
+        </ul>
+    </div>
+    <h1 id="heading" style="margin-left: 120px; display: none;">Completed Tasks</h1>
+    <div class="tasksCompleted">
+        <ul id="completedTaskList">
+        </ul>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
