@@ -111,6 +111,8 @@ function addTask(){
     taskList.appendChild(li);
 
     inputText.value = "";
+    document.querySelector('#addTaskBtn').disabled = true;
+    document.querySelector('#addTaskBtn').style.cursor = "not-allowed";
     inputText.focus();
     updateTaskCount();
     saveTasks();
