@@ -53,12 +53,6 @@ function addTask(){
     const taskList = document.querySelector('#taskList');
     const heading = document.querySelector('#heading');
 
-    if (taskInput === ""){
-        alert("Please enter a task");
-        return;
-    }
-
-
     
     const li = document.createElement('li');
     const h5 = document.createElement('h5');
