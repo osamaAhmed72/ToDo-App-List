@@ -173,6 +173,24 @@ function createTaskElement(taskText, isCompleted){
 
 loadTasks();
 
+// ------------------if input empty----------------
+
+function toggleAddButton() {
+    const inputText = document.querySelector('#taskInput');
+    const addButton = document.querySelector('#addTaskBtn');
+    if (inputText.value.trim() === "") {
+        addButton.disabled = true;
+        addButton.style.cursor = "not-allowed";
+    } else {
+        addButton.disabled = false;
+        addButton.style.cursor = "pointer";
+    }
+}
+
+document.querySelector('#taskInput').addEventListener('input', toggleAddButton);
+
+toggleAddButton();
+
 
 
 

@@ -171,3 +171,86 @@ h5{
     }
     
 }
+
+
+
+/* --------------------------media query------------- */
+
+@media  screen and (max-width: 768px) {
+    #heading{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        margin-left: 0 !important;
+    }
+
+h5{
+    font-size: 14px;
+}
+.container{
+    
+    .input-container{
+        input{
+            padding: 15px;
+            font-size: 18px;
+        }
+        button{
+            padding: 15px;
+            font-size: 18px;
+        }
+    
+    }
+    .stats{
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+}
+
+.tasksAdd{
+    margin-right: 60px;
+
+    ul li{
+        
+        padding: 5px 5px;
+        .btns{
+            gap: 5px;
+            button{
+                padding: 3px;
+                font-size: 12px;
+                font-weight: 500;
+                width: 50px;
+            }
+            input{
+                width: 15px;
+                height: 15px;
+            }
+        }
+    
+    }
+}
+
+.tasksCompleted{
+
+    margin-right: 60px;
+    ul li{
+        
+        padding: 5px 5px;
+        .btns{
+            gap: 5px;
+            button{
+                padding: 3px;
+                font-size: 12px;
+                font-weight: 500;
+                width: 50px;
+            }
+            input{
+                width: 15px;
+                height: 15px;
+            }
+        }
+    
+    }
+    
+}
+}
